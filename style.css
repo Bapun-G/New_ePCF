@@ -1,0 +1,80 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2eded;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #48a519;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  font-family: Segoe UI;
+
+}
+.CASE{
+  display: flex;
+  
+}
+.image{
+  height: 40rem;
+  width: 100%;
+  background-image: url(https://tse4.mm.bing.net/th/id/OIP.9b9gVs1l2iMgUB3s74sEowHaFj?pid=Api&P=0&h=180);
+  background-size:cover ;
+  margin-bottom: 2rem;
+}
+
+
+
+.image img{
+width: 100vw;
+
+background-image: url(https://tse4.mm.bing.net/th/id/OIP.9b9gVs1l2iMgUB3s74sEowHaFj?pid=Api&P=0&h=180);
+background-repeat: no-repeat;
+background-position:cover;
+}
+.main {
+  
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  border: 1px solid rgb(171, 17, 17);
+  background: #4faf90;
+  width: 100%;
+  margin-right: 4rem;
+
+}
+
+
+label {
+  display: block;
+  margin-top: 10px;
+  border-radius: 3rem;
+  background: transparent;
+}
+
+input, textarea {
+  width: 98%;
+  padding: 6px;
+  height: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  background:transparent;
+}
+
+.report-page {
+  background: rgb(54, 8, 8);
+  width: 800px;
+  margin: auto;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+button{
+  padding: 2rem 3rem;
+  font-size: 3rem;
+  border-radius: 2rem;
+  background:#48a519;
+  color: #fff;
+}

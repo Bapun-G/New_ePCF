@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Report</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="image"> <img src="" alt=""></div>
+<div class="main">
+
+  
+
+
+<h2>PATENT EPCF FORM</h2>
+
+<form id="patientForm">
+
+
+  <input type="text" id="CaseDI" required
+  placeholder="Enter Current CaseID"
+  >
+  
+
+  <label>Name</label>
+  <input type="text" id="name" required
+  placeholder="Enter Patine Name"
+  >
+
+  <label>Age</label>
+  <input type="number" id="age" required
+  placeholder="Enter Patinet's Age"
+  >
+
+  <label>Chief Complaint</label>
+  <textarea id="complaint" placeholder="Enter Patinet Chief Complait"></textarea>
+
+  <label>Address</label>
+  <textarea id="address" placeholder="Enter Patenet Full Address"></textarea>
+
+  <label>Vitals</label>
+  <input type="text" id="vitals" placeholder="BP, Pulse, Temp">
+
+  <label>Past History</label>
+  <textarea id="history" 
+  placeholder="Enter Patient's  Past History "></textarea>
+
+  <br><br>
+  <button type="submit">Generate Report</button>
+</form>
+
+<!-- REPORT PAGE -->
+<div id="report" class="report-page" style="display:none;">
+  <h1>Patient Medical Report</h1>
+  <p><b>CaseID:</b> <span id="CaseID"></span></p>
+  <p><b>Name:</b> <span id="rName"></span></p>
+  <p><b>Age:</b> <span id="rAge"></span></p>
+  <p><b>Chief Complaint:</b> <span id="rComplaint"></span></p>
+  <p><b>Address:</b> <span id="rAddress"></span></p>
+  <p><b>Vitals:</b> <span id="rVitals"></span></p>
+  <p><b>Past History:</b> <span id="rHistory"></span></p>
+
+  <br>
+  <button onclick="downloadPDF()">Download PDF</button>
+</div>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>
